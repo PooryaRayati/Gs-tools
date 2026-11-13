@@ -1,0 +1,16 @@
+
+
+@font-face {
+  font-family: "vazir";
+  src: url(../../../../public/Fonts/Vazirmatn/Vazirmatn-VariableFont_wght.ttf);
+}
+
+.formInp{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  opacity: 0.8;
+}
+
+.formInp ::placeholder{
+  font-family:"vazir";
+  font-size: 15px;
+}
