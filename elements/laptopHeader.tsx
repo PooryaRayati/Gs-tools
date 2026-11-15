@@ -27,7 +27,7 @@ export default function LaptopHeader() {
         <div className="header_window flex flex-col">
             <div className="w-full flex items-center mt-1  px-10 justify-between py-4">
                 <div className="flex items-center text-lg gap-5">
-                    <button className="Cart flex items-center gap-4 relative text-gray-800 text-white px-3 py-3 rounded-2xl">
+                    <button className="Cart imgShadow flex items-center gap-4 relative text-gray-800 text-white px-3 py-3 rounded-2xl">
                         <p className=" text-[15px]"> سبد خرید</p>
                         <div className="flex items-end justify-center w-4 h-4 rounded-3xl absolute top-[-4px] right-1 bg-black text-sm text-white">
                             <small className=" text-[9px]">0</small>
@@ -50,7 +50,7 @@ export default function LaptopHeader() {
                     </Link>
                 </div>
                 <div className="relative">
-                    <input className="searchbox_window flex items-center w-140 bg-gray-200 rounded-lg pr-3 pl-12 pt-1 h-13 text-right" type="text" placeholder="جست و جو برای محصولات" />
+                    <input className="imgShadow searchbox_window flex items-center w-140 bg-gray-200 rounded-lg pr-3 pl-12 pt-1 h-13 text-right" type="text" placeholder="جست و جو برای محصولات" />
                     <button className=" absolute h-13 top-0 px-3 rounded-l-lg">
                         <svg className=" opacity-60" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16">
                             <path fill="currentColor" d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0"></path>
@@ -60,7 +60,7 @@ export default function LaptopHeader() {
                 <div className=""><img className="w-40" src="/images/logo.webp" alt="GST Logo" /></div>
             </div>
             <div className="bottom_head flex w-full justify-center">
-                <div className="flex justify-between bg-rose-600/90 w-[85%] text-white p-4 rounded-2xl ">
+                <div className="imgShadow flex justify-between bg-rose-600/90 w-[85%] text-white p-4 rounded-2xl ">
                     <button className="flex items-center gap-2 bg-amber-950/70 rounded-3xl py-2 px-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24">
                             <path fill="currentColor" d="m21.49 8.73l-1.91-1.1v-2.2c0-.55-.45-1-1-1h-2.2l-1.1-1.91a1 1 0 0 0-1.37-.37l-1.21.7l-.7.41l-.7-.41l-1.2-.7c-.48-.28-1.09-.11-1.37.37l-1.1 1.91h-2.2c-.55 0-1 .45-1 1v2.2l-1.91 1.1a1 1 0 0 0-.37 1.37l.7 1.2l.41.7l-1.1 1.91a1 1 0 0 0 .37 1.37l1.2.7l.71.41v2.2c0 .55.45 1 1 1h2.2l.41.71l.7 1.2c.19.32.52.5.87.5c.17 0 .34-.04.5-.13l1.2-.7l.7-.41l.7.41l1.21.7c.23.13.5.17.76.1s.47-.24.61-.47l.7-1.2l.41-.7h2.2c.55 0 1-.45 1-1v-2.2l.71-.41l1.2-.7c.48-.28.64-.89.37-1.37l-.7-1.21l-.41-.7l.41-.7l.7-1.2c.28-.48.11-1.09-.37-1.37Zm-2.21 5.51l-.79.46l-.42.24l-.5.29v2.35h-2.35l-.83 1.44l-.35.6l-.34-.2l-.99-.57l-.21-.12l-.5-.29l-.5.29l-.41.24l-.8.46l-.34.2l-.66-1.13l-.53-.91H6.41v-2.35l-.5-.29l-.42-.24l-.79-.46l-.34-.2l.2-.34l.99-1.71l-.29-.5l-.89-1.54l1.54-.89l.5-.29V6.43h2.35l.98-1.7l.2-.34l1.54.89l.5.29l.5-.29l1.15-.67l.05-.03l.34-.2l.62 1.08l.56.96h2.35v2.35l.5.29l.42.25l.78.45l.34.2l-.58 1.01l-.6 1.04l.39.68l.79 1.37l-.34.2Z"></path>

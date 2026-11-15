@@ -1,16 +1,12 @@
 import Link from "next/link";
 import { use, useEffect, useState } from "react";
 import Cookies from 'js-cookie';
+import Menu from "@/elements/menuBox";
 
 export default function MobileHeader() {
 
     const [loggedin, setLoggedin] = useState(false)
-    const [anim, setAnim] = useState(false)
-    const [anim2, setAnim2] = useState(false)
-    const [anim3, setAnim3] = useState(false)
-    const [anim4, setAnim4] = useState(false)
-    const [anim5, setAnim5] = useState(false)
-
+    const [menu, setMenu] = useState(false)
 
 
 
@@ -24,10 +20,13 @@ export default function MobileHeader() {
 
     return (
         <div className="header_mobile hidden justify-center">
+            <Menu width="80%" show={menu} Close={() => { setMenu(false) }} Account="guest" />
             <div className="imgShadow flex items-center justify-between w-[85%] bg-rose-600/90 h-15 rounded-2xl mt-3 px-2">
-                <div className="imgShadow bg-white p-2 rounded-2xl">
-                    <img className="w-20" src="/images/logo.webp" alt="GST Logo" />
-                </div>
+                <Link href={"/"}>
+                    <div className="imgShadow bg-white p-2 rounded-2xl">
+                        <img className="w-20" src="/images/logo.webp" alt="GST Logo" />
+                    </div>
+                </Link>
                 <div className="flex items-center gap-3">
                     <button className="imgShadow bg-white p-1.5 rounded-md">
                         <svg className=" opacity-70" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -50,7 +49,7 @@ export default function MobileHeader() {
                             <small className=" text-[6px]">0</small>
                         </div>
                     </button>
-                    <button className="imgShadow bg-white p-1.5 rounded-md">
+                    <button onClick={() => setMenu(true)} className="imgShadow bg-white p-1.5 rounded-md">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M19 6a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Zm0 5a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Zm0 5a1 1 0 0 1 0 2h-7a1 1 0 0 1 0-2Z"></path>
                         </svg>

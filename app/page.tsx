@@ -9,6 +9,7 @@ import SkeletonBox from "@/elements/skeleton";
 import MobileHeader from "@/elements/mobileHeader";
 
 
+
 export default function Home() {
   return (
     <div className="">
@@ -65,7 +66,7 @@ export default function Home() {
       </div>
       <br /><br /><br />
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
